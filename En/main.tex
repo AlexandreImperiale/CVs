@@ -1,0 +1,136 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans, 10pt]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+\usepackage[latin1]{inputenc}
+\usepackage[francais]{babel}
+
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+% \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Alexandre}{Imperiale}
+\title{Ingénieur R\&D, Modélisation et Simulation Numérique}                               % optional, remove / comment the line if not wanted
+\address{7 villa du bel air}{75012 Paris}{France}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[tel.]{+33~6~60~08~85~90}                   % optional, remove / comment the line if not wanted
+\email{alexandre.imperiale@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{github.com/AlexandreImperiale}                         % optional, remove / comment the line if not wanted
+\extrainfo{\href{https://twitter.com/asimperial?lang=fr}{@asimperial}}                 % optional, remove / comment the line if not wanted
+% \photo[150pt][0.pt]{photo}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Experience}
+
+\cventry{Depuis 2013}{Ingénieur-Chercheur}{Commissariat à l'\'Energie Atomique (CEA)}{Saclay}{}{
+	Développement C++ d'un noyau de calcul ($\approx$ 50 kLoC) combinant une \textbf{méthode élément finis d'ordre élevé} et une \textbf{approche par décomposition de domaine} pour la modélisation de phénomènes de propagations d'ondes ultrasonores.\newline{}%
+	\newline{}
+	Contributions majeures :
+	\newline{} \vspace{-8pt}
+		\begin{itemize}
+		\item Développement d'un module spécifique de la plateforme de calcul \href{http://www.extende.com/fr}{CIVA} ($\approx$ 1 MLoC) pour la \textbf{modélisation et simulation numérique de la propagation d'ondes guidées dans des plaques de composites stratifiées},
+		\newline{} \vspace{-8pt}
+		\item  Implémentation, au sein de la plateforme \href{http://www.extende.com/fr}{CIVA}, de procédures de couplage entre le noyau élément finis et un noyau de calcul basé sur une approximation haute-fréquence. Application à la \textbf{modélisation de la propagation d'ondes ultrasonores et leurs interactions avec des défauts complexes.}
+		\end{itemize}
+	\vspace{8pt}	
+	Co-encadrement de thèses :
+	\vspace{8pt}	
+		\begin{itemize}
+		\item 2014--2017, \textit{Une méthode hybride couplant la méthode des équations intégrales et la méthode des rayons en vue d'applications au contrôle non destructif ultrasonore,} en collaboration avec l'UMA - ENSTA ParisTech,
+		\newline{} \vspace{-8pt}
+		\item 2015--2018, \textit{Parallélisation multi-niveaux d'un code éléments finis basé sur une stratégie de décomposition de domaine. Application au contrôle non-destructif par ultrasons,} en collaboration avec le LIP6, UPMC.
+		\end{itemize}
+	\vspace{8pt}	
+}
+
+\cventry{2010--2013}{Doctorat en mathématiques appliquées}{INRIA}{Saclay}{}{
+Doctorat en mathématiques appliquées à l'Institut National de Recherche en Informatique et Automatique. Le manuscript intitulé :  
+\textit{Image-based data assimilation methods for the personalisation of mechanical models - Application to cardiac mechanics and tagged-MRI}, est disponible (en anglais) \href{https://tel.archives-ouvertes.fr/tel-00936027}{en ligne}.}
+
+\section{Formation}
+\cventry{2010--2013}{Doctorat}{INRIA Paris-Saclay \& Université Pierre et Marie Curie}{}{}{Doctorat en Mathématiques Appliquées.}  % arguments 3 to 6 can be left empty
+\cventry{2009--2010}{Master}{Université de Rouen}{}{}{Master 2 en Mathématiques Appliquées \& Fondamentales.}
+\cventry{2005-2010}{Diplôme d'Ingénieur}{INSA Rouen}{}{}{Diplôme d'ingénieur de l'Institut National des Sciences Appliquées (INSA), département Génie Mathématique, à Rouen.}
+
+
+\section{Compétences \& développement}
+\cvitem{\small{\textit{Lang.~principal}}}{Langage C++ : C++11/14/17, métaprogrammation, interfaçage de noyaux de calcul, parallélisation \& multithreading, notions de développement sur GPU,}
+	\vspace{8pt}	
+\cvitem{\small{\textit{Lang.~annexes}}}{Rust, Python, Matlab, notions de développement Web front-end (html, css, js),}
+	\vspace{8pt}	
+\cvitem{\small{\textit{Env.}}}{Microsoft Visual Studio (compilateur MSVC), MacOS XCode (compilateur gcc/clang), git versionning (SmartGit, GitHub),}
+	\vspace{8pt}	
+\cvitem{\small{\textit{Projets perso. open-source}}}
+{
+	\vspace{-6pt}	
+	\begin{itemize}
+		\item \href{https://github.com/AlexandreImperiale/mersh}{mersh}, un module écrit en langage de programmation Rust pour la manipulation de maillages et les outils géométriques associés,
+			\vspace{3pt}
+		\item \href{https://github.com/AlexandreImperiale/grillomatic}{grillomatic}, un module C++ très léger pour la résolution des équations de l'elastodynamique en 2D pour n'importe quel type de loi de comportement,
+					\vspace{3pt}
+		\item \href{https://github.com/AlexandreImperiale/wave1D}{wave1D}, un module Python pour la propagation d'ondes en 1D en utilisant une méthode multi-échelle.
+		\end{itemize}
+}
+
+\section{Langues}
+\cvitemwithcomment{Français}{Langue maternelle}{}
+\cvitemwithcomment{Anglais}{Courant}{Utilisation quotidienne pour la communication scientifique}
+\cvitemwithcomment{Grec}{Confirmé}{Cours du soir de l'IENHP}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{habbrvyr}
+{\footnotesize
+\bibliography{publications}}
+% \bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template.tex'.
