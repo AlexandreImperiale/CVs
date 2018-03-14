@@ -28,7 +28,7 @@
 
 % personal data
 \name{Alexandre}{Imperiale}
-\title{Research Engineer, Modeling and Numerical Simulation}                               % optional, remove / comment the line if not wanted
+\title{Research Engineer, Modeling \& Numerical Simulation}                               % optional, remove / comment the line if not wanted
 \address{7 villa du bel air}{75012 Paris}{France}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
 \phone[tel.]{+33~6~60~08~85~90}                   % optional, remove / comment the line if not wanted
 \email{alexandre.imperiale@gmail.com}                               % optional, remove / comment the line if not wanted
@@ -54,7 +54,7 @@
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
-\section{Experience}
+\section{Work experiences}
 
 \cventry{Since 2013}{Research Engineer}{French Atomic Energy Commission (CEA)}{Saclay}{}{
 	Development of a C++ computational kernel ($\approx$ 50 kLoC) combining a \textbf{high-order finite element method} with a \textbf{domain decomposition approach} for ultrasonic wave propagation modeling. \newline{}%
@@ -67,49 +67,48 @@
 		\item Implementation, embedded within the \href{http://www.extende.com/fr}{CIVA} platform, of coupling procedures between the finite element kernel and a ray-based asymptotic model. Application to the \textbf{modeling of ultrasonic waves and their interactions with complex flaws.}
 		\end{itemize}
 	\vspace{8pt}	
-	Co-encadrement de thèses :
+	Co-supervision of doctoral degree:
 	\vspace{8pt}	
 		\begin{itemize}
-		\item 2014--2017, \textit{Une méthode hybride couplant la méthode des équations intégrales et la méthode des rayons en vue d'applications au contrôle non destructif ultrasonore,} en collaboration avec l'UMA - ENSTA ParisTech,
+		\item 2014--2017, \textit{A hybrid method coupling the integral equation method with the ray tracing method - Application to non-destructive testing,} in collaboration with l'UMA - ENSTA ParisTech,
 		\newline{} \vspace{-8pt}
-		\item 2015--2018, \textit{Parallélisation multi-niveaux d'un code éléments finis basé sur une stratégie de décomposition de domaine. Application au contrôle non-destructif par ultrasons,} en collaboration avec le LIP6, UPMC.
+		\item 2015--2018, \textit{Multi-level parallelization of a finite element code based upon a domain decomposition strategy - Application to non-destructive testing} in collaboration with LIP6, UPMC.
 		\end{itemize}
 	\vspace{8pt}	
 }
 
-\cventry{2010--2013}{Doctorat en mathématiques appliquées}{INRIA}{Saclay}{}{
-Doctorat en mathématiques appliquées à l'Institut National de Recherche en Informatique et Automatique. Le manuscript intitulé :  
-\textit{Image-based data assimilation methods for the personalisation of mechanical models - Application to cardiac mechanics and tagged-MRI}, est disponible (en anglais) \href{https://tel.archives-ouvertes.fr/tel-00936027}{en ligne}.}
+\cventry{2010--2013}{Ph.D. in applied mathematics}{INRIA}{Saclay}{}{
+Ph.D. in applied mathematics at the French Institute for Research in Computer Science and Automation. The manuscript entitled:  
+\textit{Image-based data assimilation methods for the personalisation of mechanical models - Application to cardiac mechanics and tagged-MRI}, is available \href{https://tel.archives-ouvertes.fr/tel-00936027}{online} (in English).}
 
-\section{Formation}
-\cventry{2010--2013}{Doctorat}{INRIA Paris-Saclay \& Université Pierre et Marie Curie}{}{}{Doctorat en Mathématiques Appliquées.}  % arguments 3 to 6 can be left empty
-\cventry{2009--2010}{Master}{Université de Rouen}{}{}{Master 2 en Mathématiques Appliquées \& Fondamentales.}
-\cventry{2005-2010}{Diplôme d'Ingénieur}{INSA Rouen}{}{}{Diplôme d'ingénieur de l'Institut National des Sciences Appliquées (INSA), département Génie Mathématique, à Rouen.}
+\section{Educational background}
+\cventry{2010--2013}{Ph.D. degree}{INRIA Paris-Saclay \& Université Pierre et Marie Curie}{}{}{Ph.D. in applied mathematics.}  % arguments 3 to 6 can be left empty
+\cventry{2009--2010}{Master degree}{Université de Rouen}{}{}{Master degree in fundamental and applied mathematics.}
+\cventry{2005-2010}{Engineering degree}{INSA Rouen}{}{}{Engineering degree at the French Institut of Applied Sciences, dpt. of mathematics, in Rouen.}
 
-
-\section{Compétences \& développement}
-\cvitem{\small{\textit{Lang.~principal}}}{Langage C++ : C++11/14/17, métaprogrammation, interfaçage de noyaux de calcul, parallélisation \& multithreading, notions de développement sur GPU,}
+\section{Development skills}
+\cvitem{\small{\textit{Main language}}}{C++11/14/17, metaprogramming, computational kernel interfacing, parallelism \& multithreading, notions of GPU development,}
 	\vspace{8pt}	
-\cvitem{\small{\textit{Lang.~annexes}}}{Rust, Python, Matlab, notions de développement Web front-end (html, css, js),}
+\cvitem{\small{\textit{Other languages}}}{Rust, Python, Matlab, notions of front-end web development (html, css, js),}
 	\vspace{8pt}	
-\cvitem{\small{\textit{Env.}}}{Microsoft Visual Studio (compilateur MSVC), MacOS XCode (compilateur gcc/clang), git versionning (SmartGit, GitHub),}
+\cvitem{\small{\textit{Env.}}}{Microsoft Visual Studio (MSVC compiler), MacOS XCode (gcc/clang compiler), git versionning (SmartGit, GitHub),}
 	\vspace{8pt}	
-\cvitem{\small{\textit{Projets perso. open-source}}}
+\cvitem{\small{\textit{Personal open-source projects}}}
 {
 	\vspace{-6pt}	
 	\begin{itemize}
-		\item \href{https://github.com/AlexandreImperiale/mersh}{mersh}, un module écrit en langage de programmation Rust pour la manipulation de maillages et les outils géométriques associés,
+		\item \href{https://github.com/AlexandreImperiale/mersh}{mersh}, a module written in Rust programming language for the manipulation of meshes and their associated geometric tools,
 			\vspace{3pt}
-		\item \href{https://github.com/AlexandreImperiale/grillomatic}{grillomatic}, un module C++ très léger pour la résolution des équations de l'elastodynamique en 2D pour n'importe quel type de loi de comportement,
+		\item \href{https://github.com/AlexandreImperiale/grillomatic}{grillomatic}, a light C++ kernel for the resolution of elastodynamic equations in 2D for any kind of constitutive law,
 					\vspace{3pt}
-		\item \href{https://github.com/AlexandreImperiale/wave1D}{wave1D}, un module Python pour la propagation d'ondes en 1D en utilisant une méthode multi-échelle.
+		\item \href{https://github.com/AlexandreImperiale/wave1D}{wave1D}, a Python model for modeling 1D wave propagation using a multi-scale method.
 		\end{itemize}
 }
 
-\section{Langues}
-\cvitemwithcomment{Français}{Langue maternelle}{}
-\cvitemwithcomment{Anglais}{Courant}{Utilisation quotidienne pour la communication scientifique}
-\cvitemwithcomment{Grec}{Confirmé}{Cours du soir de l'IENHP}
+\section{Languages}
+\cvitemwithcomment{French}{Mother tongue}{}
+\cvitemwithcomment{English}{Fluent}{Everyday use in scientific communications}
+\cvitemwithcomment{Greek}{Advanced level}{Courses of the IENHP}
 
 % Publications from a BibTeX file without multibib
 %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
@@ -117,7 +116,7 @@ Doctorat en mathématiques appliquées à l'Institut National de Recherche en Infor
 \nocite{*}
 \bibliographystyle{habbrvyr}
 {\footnotesize
-\bibliography{publications}}
+\bibliography{../publications}}
 % \bibliography{publications}                        % 'publications' is the name of a BibTeX file
 
 % Publications from a BibTeX file using the multibib package
