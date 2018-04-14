@@ -1,0 +1,136 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[9pt,a4paper,sans, 10pt]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+\usepackage[latin1]{inputenc}
+\usepackage[francais]{babel}
+
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+% \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Alexandre}{Imperiale}
+\title{Ingénieur R\&D, Modélisation et Simulation Numérique}                               % optional, remove / comment the line if not wanted
+\address{7 villa du bel air}{75012 Paris}{France}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[tel.]{+33~6~60~08~85~90}                   % optional, remove / comment the line if not wanted
+\email{alexandre.imperiale@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{github.com/AlexandreImperiale}                         % optional, remove / comment the line if not wanted
+\extrainfo{\href{https://twitter.com/asimperial?lang=fr}{@asimperial}}                 % optional, remove / comment the line if not wanted
+% \photo[150pt][0.pt]{photo}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+% \quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+
+\section{Compétences \& développement}
+\cvitem{\small{\textit{Lang.~principal}}}{C++11/14/17, métaprogrammation, interfaçage de noyaux de calcul, multithreading (OpenMPI, tbb), notions de développement sur GPU,}
+	\vspace{8pt}	
+\cvitem{\small{\textit{Lang.~annexes}}}{Rust, Python, Matlab, notions Web front-end (html, css, js),}
+	\vspace{8pt}	
+\cvitem{\small{\textit{Env.}}}{Microsoft Visual Studio (MSVC), MacOS XCode (gcc/clang), SmartGit, GitHub,}
+	\vspace{8pt}	
+\cvitem{\small{\textit{Projets perso. open-source}}}
+{
+	\vspace{-6pt}	
+	\begin{itemize}
+		\item \href{https://github.com/AlexandreImperiale/mersh}{mersh} (Rust) : manipulation de maillages et outils géométriques associés,
+			\vspace{3pt}
+		\item \href{https://github.com/AlexandreImperiale/grillomatic}{grillomatic} (C++) : résolution 2D des équations de l'elastodynamique,
+			\vspace{3pt}
+		\item \href{https://github.com/AlexandreImperiale/wave1D}{wave1D} (Python) : propagation  multi-échelle d'ondes en 1D.
+		\end{itemize}
+}
+\cvitem{\small{\textit{Communication scientifique}}} {
+Auteurs et co-auteurs de 2 publications dans des journaux internationaux avec comité de lecture, de 10 de proceedings de conférences internationales.}
+
+
+\section{Langues}
+\cvitemwithcomment{Français}{Langue maternelle}{}
+\cvitemwithcomment{Anglais}{Courant}{Utilisation quotidienne pour la communication scientifique}
+\cvitemwithcomment{Grec}{Confirmé}{Cours de l'IENHP}
+
+
+\section{Expériences}
+
+\cventry{Depuis 2013 \\ {\small{(4 ans, 3 mois)}}}{Ingénieur R\&D}{Commissariat à l'\'Energie Atomique (CEA)}{Saclay}{}{
+		\begin{itemize}
+		\item[$\circ$] Contribuer au développement de la plateforme de calcul \href{http://www.extende.com/fr}{CIVA} ($\approx$ 1 MLoC, 100 personnes) pour \textbf{la modélisation de phénomènes de propagations d'ondes ultrasonores},
+		\newline{} \vspace{-8pt}
+		\item[$\circ$] Développer un noyau de calcul en C++ ($\approx$ 50 kLoC) combinant une \textbf{méthode élément finis d'ordre élevé} et une \textbf{approche par décomposition de domaine},
+		\newline{} \vspace{-8pt}
+		\item[$\circ$] Coupler la librairie élément finis avec une librairie de calcul basé sur une approximation haute-fréquence,
+		\newline{} \vspace{-8pt}
+		\item[$\circ$] Contribuer au montage de projets internationaux (Franco-Indiens et européens),
+		\newline{} \vspace{-8pt}
+		\item[$\circ$] Co-encadrer 2 thèses : doctorat de mathématiques appliquées en collaboration avec l'UMA - ENSTA ParisTech ; doctorat en informatique en collaboration avec le LIP6, UPMC.
+		\end{itemize}
+}
+
+\cventry{2010--2013 \\ {\small{(3 ans)}} }{Ingénieur docteur en assimilation de données}{INRIA}{Saclay}{}{
+		\begin{itemize}
+		\item[$\circ$] Contribuer au développement (en Matlab) d'un modèle mécanique 3D appliqué au coeur humain,
+		\newline{} \vspace{-8pt}
+		\item[$\circ$] Traiter les données extraites d'images médicales (IRM) synthétiques et réelles,
+		\newline{} \vspace{-8pt}
+		\item[$\circ$] Diriger le développement (en Matlab) d'un outil de génération de maillages 3D propre à la simulation numérique,
+		\newline{} \vspace{-8pt}
+		\item[$\circ$] Créer des géométries 3D complexes utilisables pour la simulation cardiaque,
+		\newline{} \vspace{-8pt}
+		\item[$\circ$] Valider une méthode d'ordre réduit (0D) : simulations appliquées aux cavités cardiaques,
+		\newline{} \vspace{-8pt}
+		\item[$\circ$] Concevoir des méthodes de personalisation de modèles mécaniques du coeur en s'appuyant sur l'imagerie médicale,
+		\newline{} \vspace{-8pt}
+		\item[$\circ$] Co-encadrer 2 stages de master : génération de géométries complexes du coeurs ; méthode de comparaison entres surfaces segmentées d'IRM.
+		\end{itemize}
+}
+
+\cventry{2008 -2008 \\ {\small{(4 mois)}} }{Ingénieur développement}{U.A.L.R.}{U.S.A}{}{
+	\begin{itemize}
+		\item[$\circ$] Contribuer au développement (en C++) d'un modèle de communication de réseaux de capteurs sans-fils.
+	\end{itemize}
+}
+
+\section{Formation}
+\cventry{2010--2013}{Doctorat}{INRIA Paris-Saclay \& Université Pierre et Marie Curie}{}{}{}  % arguments 3 to 6 can be left empty
+\cventry{2009--2010}{Master 2, Math. Appliquées \& Fondamentales}{Université de Rouen}{}{}{}
+\cventry{2005-2010}{Diplôme d'Ingénieur, département Génie Mathématique}{INSA Rouen}{}{}{}
+
+
+\end{document}
+
+
+%% end of file `template.tex'.
